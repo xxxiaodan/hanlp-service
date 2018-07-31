@@ -1,0 +1,12 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /
+swagger:
+  enabled: true
+  title: EngineerCMS 系统 HanlP服务测试
+  contact:
+    name: EngineerCMS-HanLPService地址
+    url: https://gitee.com/Erichan/EngineerCMS-HanLPService
+  base-package: com.engineercms.hanlpservice
+
