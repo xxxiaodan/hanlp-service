@@ -1,12 +1,24 @@
 server:
-  port: 8888
+  port: 8081
   servlet:
     context-path: /
 swagger:
   enabled: true
-  title: EngineerCMS 系统 HanlP服务测试
+  title: WordAnalysis 系统 HanlP服务测试
   contact:
-    name: EngineerCMS-HanLPService地址
+    name: WordAnalysis-HanLPService地址
     url: https://gitee.com/Erichan/EngineerCMS-HanLPService
-  base-package: com.engineercms.hanlpservice
+  base-package: com.wordanalysis.hanlpservice
 
+spring:
+  application:
+    name: WordAnalysis-HanLPService
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+      registerWithEureka: false
+      fetchRegistry: false
+  instance:
+    instance-id: hanlp-service
+    prefer-ip-address: true     #访问路径可以显示IP地址
